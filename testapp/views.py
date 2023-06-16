@@ -18,6 +18,7 @@ def send_otp(request):
     print("data is >.....",data)
     
     if data.get('phone_number') is None:
+        print("if phone number is none")
         return Response({
             'status' : 400,
             'message' : 'key phone_number is required'
